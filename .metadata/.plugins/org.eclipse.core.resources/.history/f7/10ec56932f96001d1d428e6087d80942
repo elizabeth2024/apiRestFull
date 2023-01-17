@@ -1,0 +1,5 @@
+package com.springbootweb.apirest.models.dao;
+
+public interface UsuarioDao {
+
+}

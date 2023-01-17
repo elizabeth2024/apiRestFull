@@ -1,0 +1,9 @@
+package com.springbootweb.apirest.models.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.springbootweb.apirestmodels.entity.Vendedor;
+
+public interface VendededorDao extends CrudRepository<Vendedor, Long> {
+
+}

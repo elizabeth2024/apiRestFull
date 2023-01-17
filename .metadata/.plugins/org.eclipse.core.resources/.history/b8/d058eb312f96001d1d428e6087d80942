@@ -1,0 +1,16 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+
+import com.springbootweb.apirestmodels.entity.Productos;
+
+
+public interface IProductosService {
+public List<Productos> findAll();
+	
+	public Productos save(Productos producto);
+	
+	public Productos  findById(Long id);
+	
+	public void delete(Long id);
+}

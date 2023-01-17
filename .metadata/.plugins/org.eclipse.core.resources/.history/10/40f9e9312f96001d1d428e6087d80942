@@ -1,0 +1,40 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springbootweb.apirestmodels.entity.Productos;
+import com.springbootweb.apirest.models.dao.*;
+@Service
+public class ProductoServicelmpl implements IProductosService{
+
+	@Autowired
+	private ProductoDao ProductoDao;
+	
+	@Override
+	public List<Productos> findAll() {
+		// TODO Auto-generated method stub
+		return (List<Productos>)ProductoDao.findAll();
+	}
+
+	@Override
+	public Productos save(Productos producto) {
+		// TODO Auto-generated method stub
+		return ProductoDao.save(producto) ;
+	}
+
+	@Override
+	public Productos findById(Long id) {
+		// TODO Auto-generated method stub
+		return ProductoDao.findById(id).get() ;
+	}
+
+	@Override
+	public void delete(Long id) {
+		ProductoDao.deleteById(id);
+		
+	}
+
+}

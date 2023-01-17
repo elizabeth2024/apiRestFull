@@ -1,0 +1,9 @@
+package com.springbootweb.apirest.models.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.springbootweb.apirestmodels.entity.Productos;
+
+public interface ProductoDao extends CrudRepository<Productos, Long> {
+
+}

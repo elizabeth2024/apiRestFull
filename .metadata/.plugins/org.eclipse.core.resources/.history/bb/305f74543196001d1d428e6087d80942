@@ -1,0 +1,11 @@
+insert into cliente(id,nombre,apellido,email,fecha) values(1,'Carmen', 'Tacuri', 'tacurijuanita@hotmail.com','1974-01-04');
+insert into cliente(id,nombre,apellido,email,fecha) values (2,'Patricia','Tacuri', 'pa@hotmail.com','1975-01-04');
+insert into cliente(id,nombre,apellido,email,fecha) values (3,'Luis', 'Villa','villa@hotmail.com','1976-01-04');
+insert into cliente(id,nombre,apellido,email,fecha) values (4,'Tomas','Erazo', 'tomas@hotmail.com','1964-01-04');
+insert into cliente(id,nombre,apellido,email,fecha) values (5,'Daniela','Rosero', 'danny@hotmail.com','1992-01-04');
+
+
+insert into empleados(id,nombre,apellido,CI,fecha,direccion,sexo,salario,super_ci,dno) values (1,'Diana','Saico','0106399884','2002-04-20','Ochoa Leon','Mujer',600,5,10);
+
+insert into vendedor(id,nombre,apellidos,telefono,email,direccion) values (1,'Marcos','Alvarez','0990665036','marcos@gmail.com','Luis Cordero');
+insert into productos(id,costo,descripcion,nombre,stock) values (1,20,'Cereal de chocolate','Cereal',80);

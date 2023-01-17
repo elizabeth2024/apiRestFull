@@ -1,0 +1,5 @@
+package com.springbootweb.apirestmodels.entity;
+
+public class Usuario {
+
+}

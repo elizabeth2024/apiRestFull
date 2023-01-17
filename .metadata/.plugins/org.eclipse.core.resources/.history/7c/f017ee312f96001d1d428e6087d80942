@@ -1,0 +1,40 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springbootweb.apirestmodels.entity.Vendedor;
+import com.springbootweb.apirest.models.dao.*;
+@Service
+public class VendedorServicelmpl implements IVendedorService {
+
+	@Autowired
+	private VendededorDao VendededorDao;
+	
+	@Override
+	public List<Vendedor> findAll() {
+		
+		return ( List<Vendedor>)VendededorDao.findAll();
+	}
+
+	@Override
+	public Vendedor save(Vendedor vendedor) {
+	
+		return VendededorDao.save(vendedor);
+	}
+
+	@Override
+	public Vendedor findById(Long id) {
+	
+		return VendededorDao.findById(id).get();
+	}
+
+	@Override
+	public void delete(Long id) {
+		
+		VendededorDao.deleteById(id);
+	}
+
+}

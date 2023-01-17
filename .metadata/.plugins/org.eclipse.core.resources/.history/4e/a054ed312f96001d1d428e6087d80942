@@ -1,0 +1,41 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
+import com.springbootweb.apirestmodels.entity.Empleado;
+import com.springbootweb.apirest.models.dao.EmpleadoDao;
+
+@Service
+public class EmpleadoServicelmpl implements IEmpleadoService {
+
+	@Autowired
+	private EmpleadoDao EmpleadoDao;
+	
+	@Override
+	@Transactional (readOnly =true)
+	public List<Empleado> findAll() {
+	
+		return (List<Empleado>)EmpleadoDao.findAll();
+	}
+
+	@Override
+	public Empleado save(Empleado empleado) {
+
+		return EmpleadoDao.save(empleado);
+	}
+
+	@Override
+	public Empleado findById(Long id) {
+
+		return EmpleadoDao.findById(id).get();
+	}
+
+	@Override
+	public void delete(Long id) {
+		EmpleadoDao.deleteById(id);
+		
+	}
+
+}

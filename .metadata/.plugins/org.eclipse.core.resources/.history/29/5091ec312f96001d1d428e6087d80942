@@ -1,0 +1,17 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+
+import com.springbootweb.apirestmodels.entity.Vendedor;
+
+
+
+public interface IVendedorService {
+	public List<Vendedor> findAll();
+	
+	public Vendedor save(Vendedor vendedor);
+	
+	public Vendedor findById(Long id);
+	
+	public void delete(Long id);
+}

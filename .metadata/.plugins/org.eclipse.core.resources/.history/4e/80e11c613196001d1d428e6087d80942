@@ -1,0 +1,7 @@
+package com.springbootweb.apirest.models.dao;
+import org.springframework.data.repository.CrudRepository;
+import com.springbootweb.apirestmodels.entity.Cliente;
+
+public interface ClienteDao extends CrudRepository<Cliente,Long>{
+
+}

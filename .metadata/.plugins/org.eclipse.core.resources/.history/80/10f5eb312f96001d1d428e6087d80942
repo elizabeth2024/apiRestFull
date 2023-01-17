@@ -1,0 +1,13 @@
+package com.springbootweb.apiirest.models.services;
+
+import java.util.List;
+
+import com.springbootweb.apirestmodels.entity.Empleado;
+
+public interface IEmpleadoService {
+		public List<Empleado>findAll();
+		public Empleado save(Empleado empleado);
+		public Empleado findById(Long id);
+		public void delete(Long id);
+		
+}
